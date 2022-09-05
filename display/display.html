@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue{
+            background-color: blue;
+            color: black;
+            width: 100px;
+            height: 100px;
+        }
+        .contents {
+            width: 900px;
+            overflow: hidden;
+         }
+         .item {
+            
+            padding: 20px 30px;
+            text-align: center;
+         }
+         .contents2 {
+   
+            display: flex; 
+            flex-wrap: wrap;
+            width: 600px;
+         }
+         .item2 {
+            width: calc(100% / 4);
+            padding: 20px 10px;
+            text-align: center;
+         }
+    </style>
+</head>
+<div class="wrap">
+    <header>
+
+    </header>
+
+    <body>
+        <div class="content">
+            <div class="main_content" style="height: 100%; width:100%">
+                <p class="main" style="
+                    padding:10px;
+                    width: 500px; height:200px;
+                    color: rgb(43, 255, 0);
+                    background: rgb(0, 255, 128)">
+                    <a href="#" style=" display:block; height:20%; color: red; background: yellow">あ</a>
+                    <a href="#" style=" display:block; height:80%; color: red; background: rgb(255, 166, 0)">あ</a>
+                </p>
+                <p class="main" style="
+                    padding:10px;
+                    width: 500px; height:200px;
+                    color: rgb(43, 255, 0);
+                    background: rgb(0, 255, 128)">
+                    <a href="#"
+                        style=" display:flex;align-items:center; justify-content:center; height:20%; color: red; background: yellow">あ</a>
+                    <a href="#"
+                        style=" display:flex;align-items:center; justify-content:center; height:80%; color: red; background: rgb(255, 166, 0)">あ</a>
+                </p>
+            </div>
+            <h2> CSSで横並びのコンテンツ（子要素にfloat: left;）</h2>
+            <div class="contents">
+                <div class="item" style="float: left; background-color: blue;">
+                    <p>1つめのアイテム</p>
+                </div>
+                <div class="item"  style="float: left; background-color: rgb(0, 153, 255);">
+                    <p>2つめのアイテム</p>
+                </div>
+                <div class="item"  style="float: left; background-color: rgb(229, 255, 0);">
+                    <p>3つめのアイテム</p>
+                </div>
+                <div class="item"  style="float: left; background-color: rgb(164, 31, 168);">
+                    <p>4つめのアイテム</p>
+                </div>
+            </div>
+
+            <h2> CSSで横並びのコンテンツ（親要素にFlex）</h2>
+            <div class="contents2">
+                <div class="item2" style="background-color: blue;">
+                    <p>float: left;1つめのアイテム</p>
+                </div>
+                <div class="item2"  style="background-color: rgb(0, 153, 255);">
+                    <p>2つめのアイテム</p>
+                </div>
+                <div class="item2"  style="background-color: rgb(229, 255, 0);">
+                    <p>3つめのアイテム</p>
+                </div>
+                <div class="item2"  style="background-color: rgb(164, 31, 168);">
+                    <p>4つめのアイテム</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</div>
+
+<body>
+    <script>
+    </script>
+</body>
+
+</html>
